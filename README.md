@@ -26,7 +26,7 @@
 
 1. 메인페이지
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7dd1d452-2063-4e1d-a81e-64cd812f6779/Untitled.png)
+![image](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/7dd1d452-2063-4e1d-a81e-64cd812f6779/Untitled.png)
 
 혹시 모르는 광고 넣을 양 옆.
 메인 좌측에는 최신 글을, 우측에는 좋아요 많은 게시글을 (일일)
@@ -34,7 +34,7 @@
 
  1-1. 컴포넌트 구조
 
-![컴포넌트 트리.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/151f3e43-5f1b-47be-8b4e-82f0c05dbee4/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8_%ED%8A%B8%EB%A6%AC.png)
+![image](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/151f3e43-5f1b-47be-8b4e-82f0c05dbee4/%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8_%ED%8A%B8%EB%A6%AC.png)
 
 메인페이지에서 사용될 UI들을 컴포넌트화 시켜보았다
 
