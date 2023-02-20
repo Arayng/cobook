@@ -1,0 +1,91 @@
+@import '_mixin.scss';
+
+
+main{
+  width: 100%;
+  max-width: $col10;
+  height: 1200px;
+  margin: auto;
+  margin-top: 45px;
+  @include flexHorizon(space-between, wrap);
+  align-content: flex-start;
+
+  
+}
+
+.mainBoard{
+  width: $col5;
+  height: 425px;
+  @include borderBox();
+  .title{
+    color: $theme-color2;
+    border-bottom: 1px solid $font-g;
+    margin-bottom: 8px;
+    padding: 8px 0;
+    position: relative;
+    cursor: pointer;
+
+    h3{
+      display: inline-block;
+      width: auto;
+      font-size: 22px;
+      position: relative;
+      &::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-bottom: 2px solid $theme-color2;;
+        position: absolute;
+        bottom: -4px;
+        z-index: 0;
+        transform: scaleX(0);
+        transition: transform 0.1s ease-in;
+      }
+      &:hover{
+        color: $theme-color2;
+        opacity: 0.8;
+        &::after{
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+}
+
+.boardItem{
+  ul{
+    width: 100%;
+    height: 100%;
+    li{
+      width: 100%;
+      height: 30px;
+      border-bottom: 1px dashed $theme-color2__10;
+      @include flexHorizon();
+      transition: background 0.17s ease-out;
+      cursor: pointer;
+      &:hover{
+        background-color: $theme-color3__10;
+      }
+    }
+    .postTitle{
+      margin-right: 4px;
+      white-space: nowrap;
+      overflow-x: hidden;
+      text-overflow: ellipsis;
+    }
+    .comment{
+      flex: 1;
+    }
+    .viewCount{
+      color: $theme-alert
+    }
+  }
+}
+
+.mainSlider{
+  width: $col10;
+  height: 257px;
+  margin-top: 45px;
+  @include borderBox();
+}

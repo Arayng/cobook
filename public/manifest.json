@@ -1,0 +1,9 @@
+{
+  "short_name": "CoBook",
+  "name": "블로그형 커뮤니티",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,100 @@
+/* ******************** mixin ******************** */
+
+// layout //
+$col1 : 47px;
+$m1 : 30px;
+$col2 : ($col1 * 2) + $m1;
+$col3 : ($col1 * 3) + ($m1 * 2);
+$col4 : ($col1 * 4) + ($m1 * 3);
+$col5 : ($col1 * 5) + ($m1 * 4);
+$col6 : ($col1 * 6) + ($m1 * 5);
+$col7 : ($col1 * 7) + ($m1 * 6);
+$col8 : ($col1 * 8) + ($m1 * 7);
+$col9 : ($col1 * 9) + ($m1 * 8);
+$col10 : ($col1 * 10) + ($m1 * 9);
+
+$text : 16px;
+$text__xsmall : 12px;
+$text__small : 14px;
+
+$theme-alert: #A3BFB2;
+$theme-color1: #F2E5D5;
+$theme-color2: #A67244;
+$theme-color3: #A69180;
+$font-b: #0D0D0D;
+$font-g: #A6A6A6;
+$font-w: #FDFDFD;
+
+
+$theme-alert__50: rgba(162,191,177, 0.5);
+$theme-alert__40: rgba(162,191,177, 0.4);
+$theme-alert__30: rgba(162,191,177, 0.3);
+$theme-alert__20: rgba(162,191,177, 0.2);
+$theme-alert__10: rgba(162,191,177, 0.1);
+$theme-color1__40: rgba(242,229,213, 0.4);
+$theme-color1__30: rgba(242,229,213, 0.3);
+$theme-color1__20: rgba(242,229,213, 0.2);
+$theme-color1__10: rgba(242,229,213, 0.1);
+$theme-color2__40: rgba(165,113,67, 0.4);
+$theme-color2__30: rgba(165,113,67, 0.3);
+$theme-color2__30: rgba(165,113,67, 0.3);
+$theme-color2__20: rgba(165,113,67, 0.2);
+$theme-color2__10: rgba(165,113,67, 0.1);
+$theme-color3__40: rgba(165,145,127, 0.4);
+$theme-color3__30: rgba(165,145,127, 0.3);
+$theme-color3__20: rgba(165,145,127, 0.2);
+$theme-color3__10: rgba(165,145,127, 0.1);
+$font-b__50: rgba(12,12,12, 0.5);
+$font-w__50: rgba(253, 253, 253, 0.5);
+
+@mixin flexHorizon($justifyContent:space-between, $wrap:nowrap){
+  display: flex;
+  flex-direction: row;
+  flex-wrap: $wrap;
+  align-items: center;
+  justify-content: $justifyContent;
+}
+@mixin flexVertical($justifyContent:space-between, $wrap:nowrap){
+  display: flex;
+  flex-direction: column;
+  flex-wrap: $wrap;
+  align-items: center;
+  justify-content: $justifyContent;
+}
+
+@mixin borderBox(){
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+@mixin btn(){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $col2 - $m1;
+  height: 30px;
+  background-color: $theme-color1;
+  border-radius: 10px;
+  color: $font-b;
+  transition: background 0.2s, color 0.4s;
+  cursor: pointer;
+  &:hover{
+    color: $font-w;
+    background-color: $theme-alert;
+  }
+}
+
+@mixin icon(){
+  width: 22px;
+  height: 22px;
+  padding: 4px 4px;
+  font-size: 22px;
+  color: $font-b;
+  transition: color 0.17s;
+  cursor: pointer;
+  &:hover{
+    color: $theme-color2;
+  }
+}
+
+/* *********************************************** */

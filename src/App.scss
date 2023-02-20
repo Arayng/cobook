@@ -1,0 +1,72 @@
+/* ****************** 웹 폰트 ****************** */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@import './assets/_mixin.scss';
+
+/* *********************************************** */
+/* ****************** 초기화 css ***************** */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+button {
+  font-weight: normal;
+  font-size: $text;
+  font-family: "Pretendard", "맑은 고딕", 'Open Sans', sans-serif;
+}
+
+html,
+body {
+  min-width: 320px;
+  min-height: 320px;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ol,
+dl,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $font-b;
+}
+
+address {
+  font-style: normal;
+}
+
+
+/* *********************************************** */
+.icon{
+  @include icon();
+}
+
+.text__xsmall{ font-size: $text__xsmall;}
+.text__small{ font-size: $text__small;}
+.text__gray{ color: $font-g}
+.text__black{ color: $font-b}
+.text__white{ color: $font-w}
